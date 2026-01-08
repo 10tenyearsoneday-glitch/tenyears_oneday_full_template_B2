@@ -1,0 +1,27 @@
+
+body{
+  margin:0;
+  font-family:'Noto Serif TC','標楷體',serif;
+  background:linear-gradient(135deg,#B8C9A8,#A8BCA5,#D4E7D1,#F8F9F7);
+}
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  padding:16px;
+}
+.brand h1{margin:0}
+.dash{border-bottom:2px dashed rgba(0,0,0,.3);width:120px}
+.top-nav{
+  display:flex;
+  gap:12px;
+  padding:8px 16px;
+  overflow-x:auto;
+}
+.top-nav a{text-decoration:none;color:#333;font-size:14px}
+.home{padding:24px}
+.site-footer{
+  background:#3f5f4f;
+  color:#fff;
+  padding:16px;
+  text-align:center;
+}

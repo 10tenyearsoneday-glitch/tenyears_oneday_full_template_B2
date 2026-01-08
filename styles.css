@@ -1,27 +1,21 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap');
 body{
-  margin:0;
-  font-family:'Noto Serif TC','標楷體',serif;
-  background:linear-gradient(135deg,#B8C9A8,#A8BCA5,#D4E7D1,#F8F9F7);
+ margin:0;font-family:'Noto Serif TC','標楷體',serif;
+ background:linear-gradient(135deg,#B8C9A8,#A8BCA5,#D4E7D1,#F8F9F7);
 }
-.site-header{
-  display:flex;
-  justify-content:space-between;
-  padding:16px;
-}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px;position:sticky;top:0;background:rgba(255,255,255,.7);backdrop-filter:blur(6px)}
 .brand h1{margin:0}
-.dash{border-bottom:2px dashed rgba(0,0,0,.3);width:120px}
-.top-nav{
-  display:flex;
-  gap:12px;
-  padding:8px 16px;
-  overflow-x:auto;
-}
-.top-nav a{text-decoration:none;color:#333;font-size:14px}
-.home{padding:24px}
-.site-footer{
-  background:#3f5f4f;
-  color:#fff;
-  padding:16px;
-  text-align:center;
-}
+.brand .dash{border-bottom:2px dashed rgba(0,0,0,.3);width:120px}
+nav{display:flex;gap:14px;overflow-x:auto;padding:8px 16px;background:rgba(255,255,255,.6)}
+nav a{text-decoration:none;color:#333;font-size:14px;white-space:nowrap}
+nav a.active{font-weight:600;color:#1f3d2b}
+main{padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+.card{background:#fff;border-radius:12px;padding:12px;box-shadow:0 6px 14px rgba(0,0,0,.08)}
+.card img{width:100%;border-radius:8px}
+.price{font-weight:600}
+button{border:none;border-radius:20px;padding:6px 12px;cursor:pointer;background:#3f5f4f;color:#fff}
+footer{background:#3f5f4f;color:#fff;padding:20px;text-align:center;margin-top:40px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center}
+.modal .box{background:#fff;border-radius:16px;max-width:500px;width:90%;padding:20px}
